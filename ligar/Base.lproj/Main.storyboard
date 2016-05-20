@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ligar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="WJb-5e-Njx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYm-FT-kJf">
+                                <rect key="frame" x="260" y="434" width="80" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="PSO-AA-OTM"/>
+                                    <constraint firstAttribute="height" constant="80" id="o49-q3-TQq"/>
+                                </constraints>
+                                <state key="normal" image="likeBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPv-6u-LAO">
+                                <rect key="frame" x="499" y="434" width="81" height="81"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="CTL-Pi-hV5"/>
+                                </constraints>
+                                <state key="normal" image="fbBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyl-Xc-gcd">
+                                <rect key="frame" x="20" y="434" width="81" height="81"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="FcM-Sh-gKG"/>
+                                </constraints>
+                                <state key="normal" image="messagebtn"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Udla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxr-XM-VSZ">
+                                <rect key="frame" x="20" y="104" width="119" height="24"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="IS8-ab-e7G"/>
+                                    <constraint firstAttribute="width" constant="119" id="t7S-2A-eEt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laura, 21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czZ-Z8-I1Z">
+                                <rect key="frame" x="20" y="70" width="119" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SUe-0v-3WI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="YhO-vb-dOt"/>
+                                    <constraint firstAttribute="width" constant="119" id="adm-iP-flT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="119" id="lsb-zm-EyQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="czZ-Z8-I1Z" firstAttribute="trailing" secondItem="uxr-XM-VSZ" secondAttribute="trailing" id="0CV-8i-KNO"/>
+                            <constraint firstItem="jyl-Xc-gcd" firstAttribute="bottom" secondItem="DPv-6u-LAO" secondAttribute="bottom" id="28r-Ll-lWF"/>
+                            <constraint firstItem="WJb-5e-Njx" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="5RH-x3-hWU"/>
+                            <constraint firstItem="DPv-6u-LAO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="81b-fv-QXU"/>
+                            <constraint firstItem="nYm-FT-kJf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bph-y8-to8"/>
+                            <constraint firstItem="uxr-XM-VSZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GaU-yU-a6F"/>
+                            <constraint firstItem="WJb-5e-Njx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HAE-CR-RHs"/>
+                            <constraint firstItem="czZ-Z8-I1Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Kvs-g9-yUk"/>
+                            <constraint firstItem="uxr-XM-VSZ" firstAttribute="top" secondItem="czZ-Z8-I1Z" secondAttribute="bottom" constant="8" symbolic="YES" id="OVb-Ou-fRg"/>
+                            <constraint firstAttribute="trailing" secondItem="WJb-5e-Njx" secondAttribute="trailing" id="Q6C-rC-0M7"/>
+                            <constraint firstItem="jyl-Xc-gcd" firstAttribute="leading" secondItem="uxr-XM-VSZ" secondAttribute="leading" id="VBE-L4-aEP"/>
+                            <constraint firstItem="uxr-XM-VSZ" firstAttribute="leading" secondItem="czZ-Z8-I1Z" secondAttribute="leading" id="Y2b-pb-Dxi"/>
+                            <constraint firstItem="uxr-XM-VSZ" firstAttribute="top" secondItem="czZ-Z8-I1Z" secondAttribute="bottom" constant="13" id="cSG-ms-xdR"/>
+                            <constraint firstItem="DPv-6u-LAO" firstAttribute="top" secondItem="nYm-FT-kJf" secondAttribute="top" id="dUR-8f-Za8"/>
+                            <constraint firstItem="nYm-FT-kJf" firstAttribute="top" secondItem="jyl-Xc-gcd" secondAttribute="top" id="f6Q-LI-ZFY"/>
+                            <constraint firstItem="czZ-Z8-I1Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jbJ-qP-Tpt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jyl-Xc-gcd" secondAttribute="bottom" constant="87" id="lOf-Sc-AWD"/>
+                            <constraint firstItem="jyl-Xc-gcd" firstAttribute="centerY" secondItem="nYm-FT-kJf" secondAttribute="centerY" id="tbU-ns-J0q"/>
+                            <constraint firstItem="czZ-Z8-I1Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ysB-Ee-wWk"/>
+                            <constraint firstItem="WJb-5e-Njx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zao-SZ-Hk4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="400"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fbBtn" width="250" height="250"/>
+        <image name="likeBtn" width="256" height="256"/>
+        <image name="messagebtn" width="250" height="250"/>
+        <image name="pic" width="744" height="1392"/>
+    </resources>
+</document>
